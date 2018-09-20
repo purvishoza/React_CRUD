@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { Button } from 'antd';
+import { Input, Icon } from 'antd';
 
 class Create extends Component {
 
@@ -70,7 +72,7 @@ class Create extends Component {
                 <label htmlFor="publisher">Email:</label>
                 <input type="email" className="form-control" name="email" value={email} onChange={this.onChange} placeholder="Email Address" />
               </div>
-              <button type="submit" className="btn btn-default">Submit</button>
+              <Button type="primary" className="btn btn-default">Submit</Button>
             </form>
           </div>
         </div>

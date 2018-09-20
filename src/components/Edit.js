@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Button } from 'antd';
 import { Link } from 'react-router-dom';
 
 class Edit extends Component {
@@ -72,7 +73,7 @@ class Edit extends Component {
                 <label htmlFor="description">Email:</label>
                 <input type="email" className="form-control" name="email" value={this.state.contact.email} onChange={this.onChange} placeholder="Email Address" />
               </div>
-              <button type="submit" className="btn btn-default">Update</button>
+              <Button type="primary" className="btn btn-default">Update</Button>
             </form>
           </div>
         </div>
